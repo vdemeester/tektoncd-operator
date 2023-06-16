@@ -25,16 +25,16 @@ require (
 	go.opencensus.io v0.24.0
 	go.uber.org/zap v1.24.0
 	golang.org/x/mod v0.11.0
-	golang.org/x/sync v0.1.0
+	golang.org/x/sync v0.2.0
 	gomodules.xyz/jsonpatch/v2 v2.3.0
 	gotest.tools/v3 v3.4.0
-	k8s.io/api v0.27.1
-	k8s.io/apiextensions-apiserver v0.26.3
-	k8s.io/apimachinery v0.27.1
+	k8s.io/api v0.27.2
+	k8s.io/apiextensions-apiserver v0.27.2
+	k8s.io/apimachinery v0.27.2
 	k8s.io/client-go v1.5.2
 	k8s.io/code-generator v0.27.1
 	knative.dev/pkg v0.0.0-20230320014357-4c84b1b51ee8
-	sigs.k8s.io/controller-runtime v0.14.6
+	sigs.k8s.io/controller-runtime v0.15.0
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -219,8 +219,8 @@ require (
 	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.15.0 // indirect
-	github.com/prometheus/client_model v0.3.0 // indirect
+	github.com/prometheus/client_golang v1.15.1 // indirect
+	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.42.0 // indirect
 	github.com/prometheus/procfs v0.9.0 // indirect
 	github.com/prometheus/statsd_exporter v0.23.1 // indirect
@@ -273,7 +273,7 @@ require (
 	golang.org/x/term v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
-	golang.org/x/tools v0.7.0 // indirect
+	golang.org/x/tools v0.9.1 // indirect
 	google.golang.org/api v0.122.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
@@ -286,7 +286,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/gengo v0.0.0-20221011193443-fad74ee6edd9 // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
-	k8s.io/kube-openapi v0.0.0-20230308215209-15aac26d736a // indirect
+	k8s.io/kube-openapi v0.0.0-20230501164219-8b0f38b5fd1f // indirect
 	k8s.io/utils v0.0.0-20230406110748-d93618cff8a2 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/release-utils v0.7.3 // indirect
