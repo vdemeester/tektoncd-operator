@@ -115,6 +115,7 @@ func (oe openshiftExtension) PreReconcile(ctx context.Context, tc v1alpha1.Tekto
 		tcLabels := config.GetLabels()
 		tcLabels[serviceAccountCreationLabel] = "true"
 		config.SetLabels(tcLabels)
+		// FIXME: use Patch instead, to only update ownerref and labels
 		if _, err := oe.operatorClientSet.OperatorV1alpha1().TektonConfigs().Update(ctx, config, metav1.UpdateOptions{}); err != nil {
 			return err
 		}

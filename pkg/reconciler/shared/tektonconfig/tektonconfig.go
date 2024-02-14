@@ -201,6 +201,7 @@ func (r *Reconciler) ReconcileKind(ctx context.Context, tc *v1alpha1.TektonConfi
 	tc.Status.MarkPostInstallComplete()
 
 	// Update the object for any spec changes
+	// FIXME: remove this, shouldn't be needed, at this point, we only want to update the status.
 	if _, err := r.operatorClientSet.OperatorV1alpha1().TektonConfigs().Update(ctx, tc, metav1.UpdateOptions{}); err != nil {
 		return err
 	}
@@ -233,6 +234,7 @@ func (r *Reconciler) markUpgrade(ctx context.Context, tc *v1alpha1.TektonConfig)
 	tc.SetLabels(labels)
 
 	// Update the object for any spec changes
+	// FIXME: use Patch instead, to only update ownerref and labels
 	if _, err := r.operatorClientSet.OperatorV1alpha1().TektonConfigs().Update(ctx, tc, metav1.UpdateOptions{}); err != nil {
 		return err
 	}
