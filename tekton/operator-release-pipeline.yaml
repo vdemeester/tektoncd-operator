@@ -622,3 +622,4 @@ spec:
     workspaces:
     - name: shared
       workspace: workarea
+      subPath: draft-release
