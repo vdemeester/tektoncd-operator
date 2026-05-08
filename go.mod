@@ -26,7 +26,7 @@ require (
 	github.com/tektoncd/pruner v0.3.5
 	github.com/tektoncd/triggers v0.35.0
 	go.opencensus.io v0.24.0
-	go.uber.org/zap v1.27.1
+	go.uber.org/zap v1.28.0
 	golang.org/x/exp v0.0.0-20260112195511-716be5621a96
 	golang.org/x/mod v0.35.0
 	golang.org/x/sync v0.20.0
